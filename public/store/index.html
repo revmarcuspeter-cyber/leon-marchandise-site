@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f3ec" />
+    <meta name="description" content="A simple, secure shop for Leon Marchandise." />
+    <link rel="canonical" href="https://leonmarchandise.co.uk/store/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/store/store.css" />
+    <script src="/store/store.js" defer></script>
+    <title>Store — Leon Marchandise</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-store-i18n="skipLink">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Leon Marchandise home"><span class="brand-mark" aria-hidden="true">LM</span><span class="brand-name">Leon Marchandise</span></a>
+      <div class="header-tools">
+        <span class="store-heading" data-store-i18n="tagline">A considered collection</span>
+        <nav class="language-switcher" aria-label="Choose language" data-store-aria="languagePicker">
+          <button class="language-button is-active" type="button" data-language="en" aria-label="English" aria-pressed="true">EN</button>
+          <button class="language-button" type="button" data-language="fr" aria-label="French" aria-pressed="false">FR</button>
+        </nav>
+        <button class="cart-toggle" id="cart-toggle" type="button" aria-label="Open shopping bag" data-store-aria="bagAria"><span data-store-i18n="bag">Bag</span> <span id="cart-count" aria-live="polite">0</span></button>
+      </div>
+    </header>
+    <main class="store-main" id="main">
+      <section class="store-intro">
+        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> <span data-store-i18n="eyebrow">LEON MARCHANDISE</span></p>
+        <h1><span data-store-i18n="titleFirst">Thoughtfully</span><br /><em data-store-i18n="titleSecond">chosen.</em></h1>
+        <p data-store-i18n="intro">Explore a small, carefully curated selection. Add a product to your bag to continue to secure checkout.</p>
+      </section>
+      <p class="store-notice" id="store-notice" role="status" aria-live="polite" data-store-i18n="demoNotice">Demo catalogue — checkout is not configured yet.</p>
+      <section class="product-grid" id="product-grid" aria-label="Products"></section>
+    </main>
+    <footer class="site-footer"><a href="/" data-store-i18n="footerHome">Leon Marchandise</a><span>leonmarchandise.co.uk</span><a href="/analytics-preview/" data-store-i18n="analyticsDemo">Analytics demo</a><span class="footer-mark" aria-hidden="true">LM</span></footer>
+    <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+      <div class="cart-panel">
+        <div class="cart-header"><h2 id="cart-title" data-store-i18n="cartTitle">Your bag</h2><button class="icon-button" id="cart-close" type="button" aria-label="Close bag" data-store-aria="closeBag">×</button></div>
+        <div class="cart-lines" id="cart-lines"></div>
+        <p class="cart-empty" id="cart-empty" data-store-i18n="emptyBag">Your bag is empty.</p>
+        <div class="cart-summary"><span data-store-i18n="subtotal">Subtotal</span><strong id="cart-total">£0.00</strong></div>
+        <p class="checkout-note" id="checkout-note" data-store-i18n="checkoutNotConfigured">Checkout is not enabled in this preview. No payment will be taken.</p>
+        <button class="checkout-button" id="checkout-button" type="button" disabled data-store-i18n="checkoutUnavailable">Checkout unavailable</button>
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+.success-main { width: min(760px, calc(100% - 40px)); min-height: 65vh; margin: 0 auto; padding: 100px 0; }
+.success-copy { max-width: 520px; color: var(--muted); line-height: 1.8; }

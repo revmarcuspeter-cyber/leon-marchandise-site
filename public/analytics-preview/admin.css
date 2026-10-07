@@ -1,0 +1,13 @@
+.admin-back { color: var(--muted); font-size: 12px; text-decoration: none; }
+.admin-main { width: min(1320px, calc(100% - 96px)); min-height: 70vh; margin: auto; padding: clamp(64px, 9vw, 110px) 0 90px; }
+.admin-main h1 { margin: 22px 0; }
+.admin-description { max-width: 570px; color: var(--muted); font-size: 15px; line-height: 1.8; }
+.preview-banner { margin: 30px 0; padding: 16px 18px; border: 1px solid rgba(189,108,66,.4); border-radius: 5px; background: rgba(189,108,66,.07); color: #71452e; font-size: 12px; line-height: 1.7; }
+.metric-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.metric-card { display: grid; gap: 12px; padding: 24px; border: 1px solid var(--line); border-radius: 6px; }
+.metric-card span, .metric-card small { color: var(--muted); font-size: 11px; }
+.metric-card strong { font: 500 42px var(--serif); }
+.admin-note { max-width: 760px; margin-top: 60px; padding-top: 28px; border-top: 1px solid var(--line); }
+.admin-note h2 { font: 500 26px var(--serif); }
+.admin-note p { color: var(--muted); font-size: 13px; line-height: 1.8; }
+@media (max-width: 700px) { .admin-main { width: calc(100% - 40px); } .metric-grid { grid-template-columns: 1fr; } }

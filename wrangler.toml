@@ -1,0 +1,14 @@
+# Cloudflare Pages configuration. The static site deploys without any account bindings.
+name = "leon-marchandise-site"
+pages_build_output_dir = "./public"
+compatibility_date = "2026-09-25"
+send_metrics = false
+
+# Enable server-side checkout and live catalogue only after creating the D1 database.
+# Run `npx wrangler d1 create leon-marchandise-shop`, then replace the name below
+# and uncomment this binding using the database_id printed by Wrangler.
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "leon-marchandise-shop"
+# database_id = "REPLACE_WITH_CLOUDFLARE_D1_DATABASE_ID"
+# migrations_dir = "migrations"
